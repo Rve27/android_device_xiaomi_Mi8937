@@ -12,6 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+
+# OrionOS Flags
+ORION_MAINTAINER := Rve
+ORION_GAPPS := false
+TARGET_ENABLE_BLUR := false
+TARGET_BOOT_ANIMATION_RES := 720
+
 # Kernel
 TARGET_KERNEL_VERSION := 4.9
 
